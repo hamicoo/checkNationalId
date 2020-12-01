@@ -3,8 +3,8 @@ from flask import Flask,jsonify
 app=Flask(__name__)
 
 def idchecker(nationalid):
-    length = nationalid.__len__()
-    if (length) != 10 or str(length).isdigit() is False:
+    idcasttostr=str(nationalid)
+    if len(idcasttostr) != 10 or idcasttostr.isdigit() is False:
         return False,"The Number Of ID Number Is Invalid"
     else:
         a=int(nationalid[9:10])
