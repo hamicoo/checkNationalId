@@ -23,6 +23,14 @@ def checker(nationalid):
     return jsonify({"status":status,"message":response})
 
 
+
+
+@app.route("/testapi")
+def ctest():
+    return jsonify({"message":"it seems every thing is ok"})
+
+
+
 if __name__ == '__main__':
 	app.run()
 
