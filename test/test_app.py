@@ -9,6 +9,10 @@ def test_checker_notValid():
     response = idchecker("1111111114")    
     assert response[0] == False
 
+def test_checker_space():
+    response = idchecker(" ")    
+    assert response[0] == False
+
 def test_checker_charAsInput():
     response = idchecker("hej")    
     assert response[0] == False
