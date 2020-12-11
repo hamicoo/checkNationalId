@@ -29,6 +29,10 @@ def ctest():
     return jsonify({"message":"it seems every thing is ok"})
 
 
+@app.route("/")
+def intro():
+    return jsonify({"message":"it seem's every thinbg is ok "})
+
 
 if __name__ == '__main__':
 	app.run()
