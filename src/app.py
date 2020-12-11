@@ -24,15 +24,6 @@ def checker(nationalid):
 
 
 
-
-
-@app.route("/sayhellotoali")
-def ctest():
-    return jsonify({"message":"salam ali khosh umadi!"})
-
-
-
-
 @app.route("/testapi")
 def ctest():
     return jsonify({"message":"it seems every thing is ok"})
