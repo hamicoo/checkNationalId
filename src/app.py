@@ -15,6 +15,8 @@ def idchecker(nationalid):
         else:
             return False,"Not Valid !"
 
+def checkUnit():
+    return "token12"
 
 
 @app.route("/checkid/<nationalid>")
@@ -31,7 +33,7 @@ def ctest():
 
 @app.route("/")
 def intro():
-    return jsonify({"message":"it seem's every thinbg is ok "})
+    return jsonify({"message":"it seem's every thinbg is ok !"})
 
 
 if __name__ == '__main__':

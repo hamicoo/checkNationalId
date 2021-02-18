@@ -1,5 +1,5 @@
 from app import idchecker
-
+from app import checkUnit
 
 def test_checker_valid():
     response = idchecker("1111111111")    
@@ -37,3 +37,6 @@ def test_checker_overflow2():
     assert response[0] == False
 
 
+def check_testUnit():
+    response = checkUnit()
+    assert response == 'token13'
