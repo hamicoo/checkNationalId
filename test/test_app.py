@@ -1,5 +1,5 @@
-from src.app  import idchecker
-from src.app import checkUnit
+from app  import idchecker
+from app import checkUnit
 
 def test_checker_valid():
     response = idchecker("1111111111")    
