@@ -33,7 +33,7 @@ def ctest():
 
 @app.route("/")
 def intro():
-    return jsonify({"message":"it seem's every thinbg is ok !?"})
+    return jsonify({"message":"it seem's every thinbg is ok or not okey !?"})
 
 
 if __name__ == '__main__':
