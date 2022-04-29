@@ -28,7 +28,7 @@ def checker(nationalid):
 
 @app.route("/testapi")
 def ctest():
-    return jsonify({"message":"it seems every thing is ok! from Fernando"})
+    return jsonify({"message":"it seems every thing is ok!"})
 
 
 @app.route("/")
